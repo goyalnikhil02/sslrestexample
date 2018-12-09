@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="consoleAppender"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<!-- Log message format -->
+		<encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+		<!-- <encoder> <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} 
+			:: %msg%n </pattern> </encoder> -->
+	</appender>
+
+	<logger name="jsonLogger" additivity="false" level="DEBUG">
+		<appender-ref ref="consoleAppender" />
+	</logger>
+
+	<!-- <appender name="TIME_BASED_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+		<file>D:/logs/timeBasedlogFile.log</file> <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+		daily rollover <fileNamePattern>D:/logs/bkp_timebase/timeBasedlogFile.%d{yyyy-MM-dd-HH-mm}.log 
+		</fileNamePattern> <maxHistory>30</maxHistory> </rollingPolicy> <encoder> 
+		<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} :: %msg%n</pattern> 
+		</encoder> </appender> -->
+
+
+	<!-- Setting the root level of logging to INFO -->
+	<root level="info">
+
+		<appender-ref ref="consoleAppender"></appender-ref>
+
+	</root>
+</configuration>

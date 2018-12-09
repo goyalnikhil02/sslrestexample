@@ -1,0 +1,10 @@
+com\example\client\helloclient\PetController.class
+com\example\client\helloclient\ClientController.class
+com\example\client\helloclient\HelloClientApplication.class
+com\example\client\helloclient\LogExecutionTime.class
+com\example\client\helloclient\Person.class
+com\example\client\helloclient\PetsRepository.class
+com\example\client\helloclient\PersonController.class
+com\example\client\helloclient\ExampleAspect.class
+com\example\client\helloclient\PersonRepository.class
+com\example\client\helloclient\Pets.class
